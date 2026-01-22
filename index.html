@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- FIXES THE WARNING -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Missionaries & Cannibals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LEVEL SELECTION SCREEN -->
+<div class="screen active" id="levelScreen">
+  <h1>Tic-Tac-Toe</h1>
+  <p>Select Difficulty</p>
+
+  <div class="levels">
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+  </div>
+</div>
+
+<!-- GAME SCREEN -->
+<div class="screen" id="gameScreen">
+  <h2 id="turnText"></h2>
+
+  <div class="board" id="board"></div>
+
+  <p id="result"></p>
+  <button class="restart" onclick="location.reload()">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
